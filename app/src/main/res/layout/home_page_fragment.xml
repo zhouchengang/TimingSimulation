@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/searchhome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginVertical="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchbutt"
+        app:layout_constraintEnd_toStartOf="@id/searchbutt"
+        app:layout_constraintBottom_toBottomOf="@id/searchbutt"
+        android:background="@drawable/roundcornorremainsearch"
+        />
+    <ImageView
+        android:id="@+id/searchbutt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_main_add"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@id/searchhome"
+        app:layout_constraintTop_toTopOf="@id/searchhome"
+        app:layout_constraintBottom_toBottomOf="@id/searchhome"
+        android:src="@mipmap/ic_search"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/homefragmentscrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchhome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/topview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/toppic1"
+
+                ></View>
+
+
+            <ImageView
+                android:id="@+id/toppic1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/toppic2"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/ic_main_header_tree"
+                android:layout_marginHorizontal="5dp"
+                android:scaleType="fitEnd"
+                >
+            </ImageView>
+
+
+            <ImageView
+                android:id="@+id/toppic2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toEndOf="@id/toppic1"
+                app:layout_constraintEnd_toStartOf="@+id/toppic3"
+                app:layout_constraintBottom_toBottomOf="@id/toppic1"
+                android:src="@mipmap/ic_main_header_learning"
+                android:layout_marginHorizontal="5dp"
+                android:scaleType="fitEnd"
+                >
+            </ImageView>
+            <ImageView
+                android:id="@+id/toppic3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toEndOf="@id/toppic2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/toppic1"
+                android:src="@mipmap/ic_main_header_library"
+                android:layout_marginHorizontal="5dp"
+                android:scaleType="fitEnd"
+                >
+            </ImageView>
+
+            <!--    <TextView-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="2000dp"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@id/topview"-->
+            <!--        >-->
+            <!--    </TextView>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homemixrecycle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topview"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

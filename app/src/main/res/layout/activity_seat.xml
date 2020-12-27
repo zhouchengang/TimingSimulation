@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/remotewhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/backicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/qa_back_black_icon"
+        android:scaleType="fitCenter"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/backicon"
+        app:layout_constraintTop_toTopOf="@+id/backicon"
+        app:layout_constraintBottom_toBottomOf="@id/backicon"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Title"
+        android:gravity="center"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backicon"
+        app:layout_constraintBottom_toBottomOf="@id/backicon"
+        android:src="@mipmap/study_room_share"
+        android:scaleType="fitCenter"
+        ></ImageView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backicon"
+        >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <View
+                    android:id="@+id/monitor"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/roundcornorborderwhite"
+                    ></View>
+
+
+                <View
+                    android:id="@+id/redsig"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toStartOf="@id/monitor"
+                    app:layout_constraintTop_toTopOf="@id/monitor"
+                    app:layout_constraintEnd_toEndOf="@id/zrbz"
+                    app:layout_constraintBottom_toBottomOf="@id/zrbz"
+                    android:background="@drawable/roundcornorborderred"
+                    ></View>
+                <TextView
+                    android:id="@+id/zrbz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="值日班长"
+                    app:layout_constraintStart_toStartOf="@id/redsig"
+                    app:layout_constraintEnd_toEndOf="@id/redsig"
+                    app:layout_constraintBottom_toBottomOf="@id/redsig"
+                    app:layout_constraintTop_toTopOf="@id/redsig"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginHorizontal="4dp"
+                    ></TextView>
+
+
+
+
+                <ImageView
+                    android:id="@+id/monihead"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintStart_toStartOf="@id/monitor"
+                    app:layout_constraintBottom_toBottomOf="@id/monitor"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@mipmap/head"
+                    android:scaleType="fitXY"
+                    ></ImageView>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="@id/monihead"
+                    app:layout_constraintEnd_toEndOf="@id/monihead"
+                    android:src="@mipmap/verify_icon_light"
+                    android:scaleType="fitCenter"
+
+                    ></ImageView>
+
+                <TextView
+                    android:id="@+id/monitorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/monihead"
+                    app:layout_constraintTop_toTopOf="@id/monihead"
+                    app:layout_constraintBottom_toTopOf="@id/monitorschool"
+                    android:text="班长昵称"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"></TextView>
+
+                <TextView
+                    android:id="@+id/monitorschool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/monihead"
+                    app:layout_constraintBottom_toBottomOf="@id/monihead"
+                    app:layout_constraintTop_toBottomOf="@id/monitorname"
+                    android:text="学校"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"></TextView>
+
+                <Button
+                    android:id="@+id/enterbutt"
+                    app:layout_constraintTop_toTopOf="@id/monihead"
+                    app:layout_constraintBottom_toBottomOf="@id/monihead"
+                    app:layout_constraintEnd_toEndOf="@id/monitor"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="30dp"
+                    android:layout_width="68dp"
+                    android:text="+关注"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:padding="0dp"
+                    android:background="@drawable/roundcornorblue"
+                    >
+                </Button>
+
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:background="#99999999"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/v2"
+                    app:layout_constraintTop_toBottomOf="@id/monitor"
+                    app:layout_constraintBottom_toBottomOf="@id/opentimetext"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="20dp"
+                    ></View>
+
+                <ImageView
+                    android:id="@+id/v2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/diamond"
+                    app:layout_constraintStart_toEndOf="@id/v1"
+                    app:layout_constraintEnd_toStartOf="@id/opentimetext"
+                    app:layout_constraintTop_toTopOf="@id/opentimetext"
+                    app:layout_constraintBottom_toBottomOf="@id/opentimetext"
+                    ></ImageView>
+
+
+                <TextView
+                    android:id="@+id/opentimetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自习室开放时间\n12月14日10:00 ~ 12月14日12:00"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/monitor"
+                    android:textSize="10sp"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    ></TextView>
+                <ImageView
+                    android:id="@+id/v3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/diamond"
+                    app:layout_constraintStart_toEndOf="@id/opentimetext"
+                    app:layout_constraintTop_toTopOf="@id/opentimetext"
+                    app:layout_constraintBottom_toBottomOf="@id/opentimetext"
+                    app:layout_constraintEnd_toStartOf="@id/v4"
+                    ></ImageView>
+
+
+                <View
+                    android:id="@+id/v4"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:background="#99999999"
+                    app:layout_constraintStart_toEndOf="@id/v3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/monitor"
+                    app:layout_constraintBottom_toBottomOf="@id/opentimetext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    ></View>
+
+
+
+                <View
+                    android:id="@+id/bluetangle"
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/opentimetext"
+                    android:background="@color/skyblue"
+                    android:layout_marginLeft="5dp"></View>
+
+                <TextView
+                    android:id="@+id/restseattext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余位置: 1"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/bluetangle"
+                    app:layout_constraintTop_toTopOf="@id/bluetangle"
+                    app:layout_constraintBottom_toBottomOf="@id/bluetangle"
+                    android:layout_marginLeft="10dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/remoteblue"
+                    app:layout_constraintStart_toEndOf="@id/restseattext"
+                    app:layout_constraintTop_toTopOf="@id/bluetangle"
+                    app:layout_constraintBottom_toBottomOf="@id/bluetangle"
+                    android:layout_marginLeft="10dp"></TextView>
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toTopOf="@id/bluetangle"
+                    app:layout_constraintBottom_toBottomOf="@id/bluetangle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/study_room_detail_quickly_enter"
+                    android:scaleType="fitEnd"
+                    ></ImageView>
+
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/seatrecycle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bluetangle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginHorizontal="20dp"
+                    tools:listitem="@layout/seatgrid"
+                    ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

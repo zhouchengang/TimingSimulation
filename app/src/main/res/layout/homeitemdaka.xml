@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/roundcornorhomediary">
+
+    <View
+        android:id="@+id/topblue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/twocornorroundhomedaka"
+        />
+
+
+
+    <TextView
+        android:id="@+id/homedakaxxq"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/topblue"
+        app:layout_constraintTop_toTopOf="@id/homedakacomeon"
+        app:layout_constraintBottom_toBottomOf="@id/homedakacomeon"
+        android:text="学习群"
+        android:textColor="#FF567FFF"
+        android:textSize="12sp"
+        android:background="@drawable/fourcornorroundhomedakawhite"
+        android:layout_marginStart="10dp"
+        android:paddingHorizontal="5dp"/>
+
+
+    <TextView
+        android:id="@+id/homedakacomeon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/homedakaxxq"
+        app:layout_constraintTop_toTopOf="@id/topblue"
+        app:layout_constraintBottom_toBottomOf="@id/topblue"
+        app:layout_constraintEnd_toEndOf="@id/topblue"
+        android:text="学习群学习群学习群学习群学习群学习群学习群"
+        android:gravity="left"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#FFFFFFFF"
+        android:paddingHorizontal="5dp"/>
+
+
+
+    <TextView
+        android:id="@+id/homedakapublishtime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:text="得得得得得得得得得得"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topblue"
+        android:gravity="center|left"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        />
+
+    <View
+        android:id="@+id/homedakamidblue"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homedakapublishtime"
+        android:background="@drawable/homedakaroundcornorbluethin"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <TextView
+        android:id="@+id/homedakadkzt"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="打卡主题"
+        android:textColor="#FF567FFF"
+        app:layout_constraintStart_toStartOf="@id/homedakamidblue"
+        app:layout_constraintEnd_toEndOf="@id/homedakamidblue"
+        app:layout_constraintTop_toTopOf="@id/homedakamidblue"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/homedakamidbutt"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="我要加入"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintStart_toStartOf="@id/homedakamidblue"
+        app:layout_constraintEnd_toEndOf="@id/homedakamidblue"
+        app:layout_constraintBottom_toBottomOf="@id/homedakamidblue"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/fourcornorroundhomedaka"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+
+    <TextView
+        android:id="@+id/homedakamidmid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="我要加入"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/homedakamidblue"
+        app:layout_constraintEnd_toEndOf="@id/homedakamidblue"
+        app:layout_constraintTop_toBottomOf="@id/homedakadkzt"
+        app:layout_constraintBottom_toTopOf="@id/homedakamidbutt"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="16sp"
+        />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/homedakahead"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homedakamidblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/head"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/homedakaneckname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/homedakahead"
+        app:layout_constraintBottom_toBottomOf="@id/homedakahead"
+        app:layout_constraintStart_toEndOf="@id/homedakahead"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center|left"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:text="5614654"
+        />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

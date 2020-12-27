@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/mine_page_top_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:id="@+id/minetop"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/minemid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minetop"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--  左上角头像 -->
+            <ImageView
+                android:id="@+id/customicon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/head"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/neckname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="NeckName"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/customicon"
+                app:layout_constraintTop_toTopOf="@id/customicon"></TextView>
+
+            <View
+                android:id="@+id/verifyview"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/roundcornorblue"
+                app:layout_constraintBottom_toBottomOf="@id/customicon"
+                app:layout_constraintEnd_toEndOf="@id/verifyjumpicon"
+                app:layout_constraintStart_toEndOf="@id/customicon"
+                app:layout_constraintTop_toBottomOf="@id/neckname" />
+
+            <ImageView
+                android:id="@+id/verifyicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@mipmap/setting_img"
+                app:layout_constraintBottom_toBottomOf="@id/verifyview"
+                app:layout_constraintStart_toStartOf="@id/verifyview"
+                app:layout_constraintTop_toTopOf="@id/verifyview" />
+
+
+            <TextView
+                android:id="@+id/verifytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:padding="0dp"
+                android:text="身份认证"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/verifyview"
+                app:layout_constraintStart_toEndOf="@id/verifyicon"
+                app:layout_constraintTop_toTopOf="@id/verifyview"></TextView>
+
+            <ImageView
+                android:id="@+id/verifyjumpicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/setting_img"
+                app:layout_constraintBottom_toBottomOf="@id/verifyview"
+                app:layout_constraintStart_toEndOf="@id/verifytext"
+                app:layout_constraintTop_toTopOf="@id/verifyview" />
+
+            <ImageView
+                android:id="@+id/scanicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@mipmap/arrow_right_gray"
+                app:layout_constraintBottom_toBottomOf="@id/customicon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/customicon"></ImageView>
+
+
+            <LinearLayout
+                android:id="@+id/nv1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/nv2"
+                app:layout_constraintStart_toStartOf="@id/customicon"
+                app:layout_constraintTop_toBottomOf="@id/customicon">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="道友"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nv2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/nv3"
+                app:layout_constraintStart_toEndOf="@id/nv1"
+                app:layout_constraintTop_toTopOf="@id/nv1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:text="689"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="关注"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nv3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/nv4"
+                app:layout_constraintStart_toEndOf="@id/nv2"
+                app:layout_constraintTop_toTopOf="@id/nv1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:text="150"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="粉丝"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nv4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/scanicon"
+                app:layout_constraintStart_toEndOf="@id/nv3"
+                app:layout_constraintTop_toTopOf="@id/nv1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:text="524"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="获赞"></TextView>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/lay1"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundcornorwhite"
+                app:layout_constraintEnd_toEndOf="@id/scanicon"
+                app:layout_constraintStart_toStartOf="@id/customicon"
+                app:layout_constraintTop_toBottomOf="@id/nv1"></View>
+
+            <ImageView
+                android:id="@+id/wpicon"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/icon_mine_new_my_dist"
+                app:layout_constraintBottom_toBottomOf="@id/lay1"
+                app:layout_constraintEnd_toStartOf="@id/wptext"
+                app:layout_constraintStart_toStartOf="@id/lay1"
+                app:layout_constraintTop_toTopOf="@id/lay1" />
+
+            <TextView
+                android:id="@+id/wptext"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="我的网盘"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@id/lay1"
+                app:layout_constraintEnd_toEndOf="@id/line1"
+                app:layout_constraintStart_toEndOf="@id/wpicon"
+                app:layout_constraintTop_toTopOf="@id/lay1"></TextView>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="7dp"
+                android:background="#22222222"
+                app:layout_constraintBottom_toBottomOf="@id/lay1"
+                app:layout_constraintEnd_toEndOf="@id/lay1"
+                app:layout_constraintStart_toStartOf="@id/lay1"
+                app:layout_constraintTop_toTopOf="@id/lay1"></View>
+
+            <ImageView
+                android:id="@+id/cgicon"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_mine_new_my_craft"
+                app:layout_constraintBottom_toBottomOf="@id/lay1"
+                app:layout_constraintEnd_toStartOf="@id/cgtext"
+                app:layout_constraintStart_toEndOf="@id/line1"
+                app:layout_constraintTop_toTopOf="@id/lay1" />
+
+            <TextView
+                android:id="@+id/cgtext"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="我的草稿箱"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@id/lay1"
+                app:layout_constraintEnd_toEndOf="@id/lay1"
+                app:layout_constraintStart_toEndOf="@id/cgicon"
+                app:layout_constraintTop_toTopOf="@id/lay1"></TextView>
+
+
+            <View
+                android:id="@+id/lay2"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/roundcornorwhite"
+                app:layout_constraintEnd_toEndOf="@id/scanicon"
+                app:layout_constraintStart_toStartOf="@id/customicon"
+                app:layout_constraintTop_toBottomOf="@id/lay1"></View>
+
+            <ImageView
+                android:id="@+id/qbicon"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="25dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_mine_new_my_wallet"
+                app:layout_constraintBottom_toBottomOf="@id/lay2"
+                app:layout_constraintEnd_toStartOf="@id/qbtext"
+
+                app:layout_constraintStart_toStartOf="@id/lay2"
+                app:layout_constraintTop_toTopOf="@id/lay2" />
+
+            <TextView
+                android:id="@+id/qbtext"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:text="我的钱包"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@id/lay2"
+                app:layout_constraintEnd_toEndOf="@id/line2"
+                app:layout_constraintStart_toEndOf="@id/qbicon"
+                app:layout_constraintTop_toTopOf="@id/lay2">
+
+            </TextView>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="7dp"
+                android:background="#22222222"
+                app:layout_constraintBottom_toBottomOf="@id/lay2"
+                app:layout_constraintEnd_toEndOf="@id/lay2"
+                app:layout_constraintStart_toStartOf="@id/lay2"
+                app:layout_constraintTop_toTopOf="@id/lay2">
+
+            </View>
+
+            <ImageView
+                android:id="@+id/jficon"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_mine_integral"
+                app:layout_constraintBottom_toBottomOf="@id/lay2"
+                app:layout_constraintEnd_toStartOf="@id/jftext"
+                app:layout_constraintStart_toEndOf="@id/line2"
+                app:layout_constraintTop_toTopOf="@id/lay2" />
+
+            <TextView
+                android:id="@+id/jftext"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="我的积分"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@id/lay2"
+                app:layout_constraintEnd_toEndOf="@id/lay2"
+                app:layout_constraintStart_toEndOf="@id/jficon"
+                app:layout_constraintTop_toTopOf="@id/lay2"></TextView>
+
+
+            <View
+                android:id="@+id/laystudyrecord"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/roundcornorwhite"
+                app:layout_constraintEnd_toEndOf="@id/scanicon"
+                app:layout_constraintStart_toStartOf="@id/customicon"
+                app:layout_constraintTop_toBottomOf="@id/lay2"></View>
+
+            <TextView
+                android:id="@+id/studyrecordtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:paddingVertical="10dp"
+                android:text="我的学习记录"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/laystudyrecord"
+                app:layout_constraintTop_toTopOf="@id/laystudyrecord"></TextView>
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#22222222"
+                app:layout_constraintEnd_toEndOf="@id/laystudyrecord"
+                app:layout_constraintStart_toStartOf="@id/laystudyrecord"
+                app:layout_constraintTop_toBottomOf="@id/studyrecordtext"></View>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center_horizontal"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/icon_mine_new_my_achievement"
+                app:layout_constraintBottom_toBottomOf="@id/laystudyrecord"
+                app:layout_constraintEnd_toEndOf="@id/laystudyrecord"
+                app:layout_constraintTop_toTopOf="@id/line3" />
+
+
+            <TextView
+                android:id="@+id/recordtext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="学习了1526天"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/laystudyrecord"
+                app:layout_constraintTop_toBottomOf="@id/line3"></TextView>
+
+            <TextView
+                android:id="@+id/recordtext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="2016.09.16-2020.12.08"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/laystudyrecord"
+                app:layout_constraintTop_toBottomOf="@id/recordtext1"></TextView>
+
+            <TextView
+                android:id="@+id/recordtext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="center_horizontal"
+                android:text="已获得232项成就"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/recordbutt"
+                app:layout_constraintStart_toStartOf="@id/laystudyrecord"
+                app:layout_constraintTop_toBottomOf="@id/recordtext2"></TextView>
+
+            <Button
+                android:id="@+id/recordbutt"
+                android:layout_width="90dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundcornorborderblue"
+                android:padding="0dp"
+                android:text="查看"
+                android:textColor="@color/remoteblue"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/laystudyrecord"
+                app:layout_constraintStart_toStartOf="@id/laystudyrecord">
+
+            </Button>
+
+
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                app:layout_constraintTop_toBottomOf="@id/laystudyrecord"
+                app:layout_constraintStart_toStartOf="@id/customicon"
+                app:layout_constraintEnd_toEndOf="@id/scanicon"
+                android:id="@+id/banner"
+                android:layout_marginTop="15dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"/>
+            <!-- 参考http://www.zyiz.net/tech/detail-108194.html-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <View
+                android:id="@+id/laystudyprepare"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/roundcornorwhite"
+                app:layout_constraintBottom_toBottomOf="@id/linerpreparexxjh"
+                app:layout_constraintEnd_toEndOf="@id/scanicon"
+                app:layout_constraintStart_toStartOf="@id/customicon"
+                app:layout_constraintTop_toBottomOf="@id/banner"></View>
+
+            <TextView
+                android:id="@+id/studypreparetext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:paddingVertical="10dp"
+                android:text="学习必备"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/laystudyprepare"
+                app:layout_constraintTop_toTopOf="@id/laystudyprepare"></TextView>
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#22222222"
+                app:layout_constraintEnd_toEndOf="@id/laystudyprepare"
+                app:layout_constraintStart_toStartOf="@id/laystudyprepare"
+                app:layout_constraintTop_toBottomOf="@id/studypreparetext"></View>
+
+            <LinearLayout
+                android:id="@+id/linerprepareksxx"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerserviceorder"
+                app:layout_constraintStart_toStartOf="@id/laystudyservice"
+                app:layout_constraintTop_toBottomOf="@id/line4">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/xxjs" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="开始学习"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerpreparespdk"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerserviceempty1"
+                app:layout_constraintStart_toEndOf="@id/linerprepareksxx"
+                app:layout_constraintTop_toTopOf="@id/linerprepareksxx">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/spdk" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="视频打卡"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerprepareqcxx"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerserviceempty2"
+                app:layout_constraintStart_toEndOf="@id/linerpreparespdk"
+                app:layout_constraintTop_toTopOf="@id/linerprepareksxx">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/qcsj" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="起床睡觉"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerpreparexxnc"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/laystudyservice"
+                app:layout_constraintStart_toEndOf="@id/linerprepareqcxx"
+                app:layout_constraintTop_toTopOf="@id/linerprepareksxx">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_drawer_study_farm" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="学习农场"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerpreparexxjh"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerpreparexxq"
+                app:layout_constraintStart_toStartOf="@id/laystudyservice"
+                app:layout_constraintTop_toBottomOf="@id/linerprepareksxx">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_tool_study_plan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="学习计划"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerpreparexxq"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerpreparetsg"
+                app:layout_constraintStart_toEndOf="@id/linerpreparexxjh"
+                app:layout_constraintTop_toTopOf="@id/linerpreparexxjh">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_tool_create_room" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="学习群"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerpreparetsg"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerserviceempty2"
+                app:layout_constraintStart_toEndOf="@id/linerpreparexxq"
+                app:layout_constraintTop_toTopOf="@id/linerpreparexxjh">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/tsg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="图书馆"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerprepareempty1"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/laystudyservice"
+                app:layout_constraintStart_toEndOf="@id/linerpreparetsg"
+                app:layout_constraintTop_toTopOf="@id/linerpreparexxjh">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/laystudyservice"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/roundcornorwhite"
+                app:layout_constraintBottom_toBottomOf="@id/linerservicepurchase"
+                app:layout_constraintEnd_toEndOf="@id/scanicon"
+                app:layout_constraintStart_toStartOf="@id/customicon"
+                app:layout_constraintTop_toBottomOf="@id/laystudyprepare"></View>
+
+            <TextView
+                android:id="@+id/studyservicetext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:paddingVertical="10dp"
+                android:text="学习服务"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/laystudyservice"
+                app:layout_constraintTop_toTopOf="@id/laystudyservice"></TextView>
+
+            <View
+                android:id="@+id/line5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#22222222"
+                app:layout_constraintEnd_toEndOf="@id/laystudyservice"
+                app:layout_constraintStart_toStartOf="@id/laystudyservice"
+                app:layout_constraintTop_toBottomOf="@id/studyservicetext"></View>
+
+            <LinearLayout
+                android:id="@+id/linerservicepurchase"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerserviceorder"
+                app:layout_constraintStart_toStartOf="@id/laystudyservice"
+                app:layout_constraintTop_toBottomOf="@id/line5">
+
+                <ImageView
+                    android:id="@+id/iconservicepurchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_mine_new_my_purchase" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="我的已购"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerserviceorder"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerserviceempty1"
+                app:layout_constraintStart_toEndOf="@id/linerservicepurchase"
+                app:layout_constraintTop_toTopOf="@id/linerservicepurchase">
+
+                <ImageView
+                    android:id="@+id/iconserviceorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_mine_new_my_order" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="交易记录"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerserviceempty1"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linerserviceempty2"
+                app:layout_constraintStart_toEndOf="@id/linerserviceorder"
+                app:layout_constraintTop_toTopOf="@id/linerservicepurchase">
+
+                <ImageView
+                    android:id="@+id/iconserviceempty1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerserviceempty2"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/laystudyservice"
+                app:layout_constraintStart_toEndOf="@id/linerserviceempty1"
+                app:layout_constraintTop_toTopOf="@id/linerservicepurchase">
+
+                <ImageView
+                    android:id="@+id/iconserviceempty2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/laystudycreate"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/roundcornorwhite"
+                app:layout_constraintBottom_toBottomOf="@id/linercreatevlog"
+                app:layout_constraintEnd_toEndOf="@id/scanicon"
+                app:layout_constraintStart_toStartOf="@id/customicon"
+                app:layout_constraintTop_toBottomOf="@id/laystudyservice"></View>
+
+            <TextView
+                android:id="@+id/studycreatetext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:paddingVertical="10dp"
+                android:text="创作者中心"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/laystudycreate"
+                app:layout_constraintTop_toTopOf="@id/laystudycreate"></TextView>
+
+            <View
+                android:id="@+id/line6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#22222222"
+                app:layout_constraintEnd_toEndOf="@id/laystudycreate"
+                app:layout_constraintStart_toStartOf="@id/laystudycreate"
+                app:layout_constraintTop_toBottomOf="@id/studycreatetext"></View>
+
+            <LinearLayout
+                android:id="@+id/linercreatevlog"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linercreateinfo"
+                app:layout_constraintStart_toStartOf="@id/laystudycreate"
+                app:layout_constraintTop_toBottomOf="@id/line6">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_mine_new_vlog_post" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="投稿汤视频"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linercreateinfo"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linercreateempty1"
+                app:layout_constraintStart_toEndOf="@id/linercreatevlog"
+                app:layout_constraintTop_toTopOf="@id/linercreatevlog">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_mine_new_vlog_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="内容管理"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linercreateempty1"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linercreateempty2"
+                app:layout_constraintStart_toEndOf="@id/linercreateinfo"
+                app:layout_constraintTop_toTopOf="@id/linercreatevlog">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linercreateempty2"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/laystudycreate"
+                app:layout_constraintStart_toEndOf="@id/linercreateempty1"
+                app:layout_constraintTop_toTopOf="@id/linercreatevlog">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

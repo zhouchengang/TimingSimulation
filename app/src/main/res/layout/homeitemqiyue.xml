@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/roundcornorhomediary">
+
+    <View
+        android:id="@+id/homeqiyuetopblue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/twocornorroundhomedaka"
+        />
+
+
+
+    <TextView
+        android:id="@+id/homeqiyuexxq"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/homeqiyuetopblue"
+        app:layout_constraintTop_toTopOf="@id/homeqiyuecomeon"
+        app:layout_constraintBottom_toBottomOf="@id/homeqiyuecomeon"
+        android:text="学习群"
+        android:textColor="#FF567FFF"
+        android:textSize="12sp"
+        android:background="@drawable/fourcornorroundhomedakawhite"
+        android:layout_marginStart="10dp"
+        android:paddingHorizontal="5dp"/>
+
+
+    <TextView
+        android:id="@+id/homeqiyuecomeon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/homeqiyuexxq"
+        app:layout_constraintTop_toTopOf="@id/homeqiyuetopblue"
+        app:layout_constraintBottom_toBottomOf="@id/homeqiyuetopblue"
+        app:layout_constraintEnd_toEndOf="@id/homeqiyuetopblue"
+        android:text="学习群学习群学习群学习群学习群学习群学习群"
+        android:gravity="left"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#FFFFFFFF"
+        android:paddingHorizontal="5dp"/>
+
+
+
+    <TextView
+        android:id="@+id/homeqiyuepublishtime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:text="得得得得得得得得得得"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeqiyuetopblue"
+        android:gravity="center|left"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        />
+
+    <View
+        android:id="@+id/homeqiyuemidred"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeqiyuepublishtime"
+        android:background="@drawable/homeqiyueroundcornorred"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <TextView
+        android:id="@+id/homeqiyueqytz"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="契约挑战"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintStart_toStartOf="@id/homeqiyuemidred"
+        app:layout_constraintEnd_toEndOf="@id/homeqiyuemidred"
+        app:layout_constraintTop_toTopOf="@id/homeqiyuemidred"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/homeqiyuetotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="羊"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF88"
+        app:layout_constraintStart_toStartOf="@id/homeqiyuemidred"
+        app:layout_constraintEnd_toEndOf="@id/homeqiyuemidred"
+        app:layout_constraintTop_toBottomOf="@id/homeqiyueqytz"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/homeqiyuezjjc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="总奖金池"
+        android:textColor="#FFFFFFFF"
+        android:alpha="0.7"
+        app:layout_constraintStart_toStartOf="@id/homeqiyuemidred"
+        app:layout_constraintEnd_toEndOf="@id/homeqiyuemidred"
+        app:layout_constraintTop_toBottomOf="@id/homeqiyuetotal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:textSize="10sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/homeqiyuemidred"
+        app:layout_constraintEnd_toEndOf="@id/homeqiyuemidred"
+        app:layout_constraintBottom_toTopOf="@id/homeqiyuemidbutt"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:id="@+id/vlogdjs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离开始:"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/vlogdjs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="199"
+            android:padding="2dp"
+            android:textColor="#FFFF6666"
+            android:background="@drawable/fourcornorroundhomeqiyuesmall"
+            android:textSize="12sp"
+            />
+        <TextView
+        android:id="@+id/vlogdjs3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+            android:padding="2dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        />
+
+        <TextView
+            android:id="@+id/vlogdjs4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17"
+            android:padding="2dp"
+            android:background="@drawable/fourcornorroundhomeqiyuesmall"
+            android:textColor="#FFFF6666"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/vlogdjs5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/vlogdjs6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:padding="2dp"
+            android:background="@drawable/fourcornorroundhomeqiyuesmall"
+            android:textColor="#FFFF6666"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/homeqiyuemidbutt"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="我要加入"
+        android:textColor="#FFFF6666"
+        app:layout_constraintStart_toStartOf="@id/homeqiyuemidred"
+        app:layout_constraintEnd_toEndOf="@id/homeqiyuemidred"
+        app:layout_constraintBottom_toBottomOf="@id/homeqiyuemidred"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/fourcornorroundhomeqiyue"
+        android:gravity="center"
+        android:textSize="14sp"
+        />
+
+
+    <ImageView
+        android:id="@+id/homeqiyuehead"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeqiyuemidred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/head"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/homeqiyueneckname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/homeqiyuehead"
+        app:layout_constraintBottom_toBottomOf="@id/homeqiyuehead"
+        app:layout_constraintStart_toEndOf="@id/homeqiyuehead"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center|left"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:text="5614654"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

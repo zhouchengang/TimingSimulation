@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeitemmainback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundcornorhomediary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="0dp"
+            android:layout_height="280dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="27dp"
+            android:scaleType="centerCrop"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cover"
+            android:text="#话题话题话题"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/skyblue"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/homediaryinfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topic"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="#内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/homediarysmile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/homediarysmile"
+            app:layout_constraintBottom_toBottomOf="@id/homediarysmile"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/roundcornorhomediaryyellow"
+            android:text="+ 道友"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="12dp"
+            />
+
+        <View
+            android:id="@+id/homediaryline1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homediaryinfo"
+            android:background="#FFEEEEEE"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/homediarysmile"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/ic_main_smile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homediaryline1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="15dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/homediarylike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/like_img"
+            app:layout_constraintTop_toTopOf="@id/homediarysmile"
+            app:layout_constraintBottom_toBottomOf="@id/homediarysmile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/homediaryline2"
+            android:paddingVertical="5dp"
+            />
+
+        <View
+            android:id="@+id/homediaryline2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#FFEEEEEE"
+            app:layout_constraintStart_toEndOf="@id/homediarylike"
+            app:layout_constraintTop_toTopOf="@id/homediarysmile"
+            app:layout_constraintBottom_toBottomOf="@id/homediarysmile"
+            app:layout_constraintEnd_toStartOf="@id/homediarysmile"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeitemtopcons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/homeitemmainback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/homeitemmainback"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcornorhomehead2"
+                android:orientation="vertical"
+                android:paddingLeft="30dp">
+
+
+                <TextView
+                    android:id="@+id/diaryneckname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="1231231"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/homeitemverifyicon"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@mipmap/iconverify"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        app:layout_constraintBottom_toBottomOf="@id/school"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/school" />
+
+                    <TextView
+                        android:id="@+id/school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:paddingHorizontal="10dp"
+                        android:text="这是一个学校一个学校一个学校"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/homeitemverifyicon"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/headback0"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/roundhomehead1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/headback1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/roundborderhomehead1"
+            app:layout_constraintStart_toStartOf="@id/headback0"
+            app:layout_constraintEnd_toEndOf="@id/headback0"
+            app:layout_constraintTop_toTopOf="@id/headback0"
+            app:layout_constraintBottom_toBottomOf="@id/headback0"
+            />
+
+
+        <ImageView
+            android:id="@+id/headd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/head"
+            app:layout_constraintStart_toStartOf="@id/headback0"
+            app:layout_constraintEnd_toEndOf="@id/headback0"
+            app:layout_constraintTop_toTopOf="@id/headback0"
+            app:layout_constraintBottom_toBottomOf="@id/headback0"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

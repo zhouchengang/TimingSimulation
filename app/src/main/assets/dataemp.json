@@ -1,0 +1,579 @@
+{
+	"result": false,
+	"errorCode": 0,
+	"errorMsg": "成功",
+	"isEnd": false,
+	"list": [
+
+		{
+		"contentType": 4,
+		"feed": null,
+		"svlog": null,
+		"group": null,
+		"clockApp": {
+			"id": 35393,
+			"title": "我们的目标是星辰大海",
+			"createTime": 1604289918000,
+			"groupInfo": {
+				"id": 1527196,
+				"teamID": "2894945662",
+				"builderInfo": {
+					"id": 18339916,
+					"nickname": "调了个调",
+					"gender": "female",
+					"avatar": "http://timing-imgservice.kr-cell.com/image/light/editor/timing_9e0ayx1rVD5B6fKplTQCynbCCBXMdemV0h-p4lsrtzmCFkItzQ_1604587282481_8z8ss0zurwwaysdeabp2",
+					"department": "直播时间：每周六周日上午十一点\n自习室不定时开放🌝🌝\n调调是一个偶尔讲英语，陪你聊聊天，学过文科理科医科商科的情感博主~\n本科应用心理学临床方向，在精神病专科医院做过实习医生。\n做过各种志愿者，现在在澳洲一家企业做会计相关工作，同时在国内某平台担任英语老师。\n多邻国120分，最近希望刷分到135+。\n雅思擅长阅读。\n有在澳洲会计工作经验，对留学比较了解",
+					"categoryAlias": "心理学/国际注册会计师(ACCA)/多邻国",
+					"type": "normal",
+					"isOfficial": false,
+					"accountType": 1,
+					"isFollow": false,
+					"statusInfo": {
+						"type": 1,
+						"startTime": 1594557161000,
+						"learningData": null
+					},
+					"isVerify": true,
+					"authenticationInfo": {
+						"type": 3,
+						"certList": [{
+							"type": 0,
+							"category": "已实名",
+							"desc": "皇家墨尔本理工大学商学院金牌学生大使；\n皇家墨尔本理工大学学生代表；\n皇家墨尔本理工大学学生学习导师；\nCommonpurpose国际领导力项目参与者；\n多邻国120，听说读写均120（同等雅思4个7）\n"
+						}]
+					}
+				},
+				"name": "和调调一起加油总部⑦"
+			}
+		},
+		"contractApp": null,
+		"freeLive": null,
+		"personalLive": null,
+		"qaRoom": null,
+		"freeLearningRoom": null,
+		"payLearningRoom": null,
+		"topic": null,
+		"activity": null
+	},
+		{
+		"contentType": 1,
+		"feed": {
+			"id": 30080257,
+			"author": {
+				"id": 5323394,
+				"nickname": "韶桓🇨🇳",
+				"gender": "female",
+				"avatar": "http://timing-imgservice.kr-cell.com/image/timing_5323394_1567386162648_ox2jiajocg0cy9m0xx1k",
+				"department": "​人生所有的努力\n无非是两种结果\n\n见效或者见笑\n\n做好遇见前者的准备\n做好遇见后者的从容",
+				"categoryAlias": "入学考试",
+				"type": "normal",
+				"isOfficial": false,
+				"accountType": 0,
+				"isFollow": false,
+				"statusInfo": {
+					"type": "2",
+					"startTime": 1605182242000,
+					"learningData": {
+						"type": 5,
+						"roomID": 0,
+						"server": 0,
+						"source": "app",
+						"learningRoomInfo": null
+					}
+				},
+				"isVerify": false,
+				"authenticationInfo": null
+			},
+			"content": "南墙撞过，仍不想回头～\n黄河也见了，仍不死心～",
+			"type": 3,
+			"postTime": 1605082242000,
+			"likeCount": 10,
+			"replyCount": 0,
+			"isLike": false,
+			"video": null,
+			"imageList": [
+				{
+				"id": 471493913,
+				"width": 1032,
+				"fileName": "timing_5323394_1691066626",
+				"height": 2304,
+				"isGif": false,
+				"url": "http://timing-imgservice.kr-cell.com/image/timing_5323394_1691066626",
+				"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_5323394_1691066626?x-oss-process=image/resize,m_fill,w_300,h_300"
+			}, {
+				"id": 471493920,
+				"width": 731,
+				"fileName": "timing_5323394_974384115",
+				"height": 1632,
+				"isGif": false,
+				"url": "http://timing-imgservice.kr-cell.com/image/timing_5323394_974384115",
+				"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_5323394_974384115?x-oss-process=image/resize,m_fill,w_300,h_300"
+			}, {
+				"id": 471493928,
+				"width": 731,
+				"fileName": "timing_5323394_247657934",
+				"height": 1632,
+				"isGif": false,
+				"url": "http://timing-imgservice.kr-cell.com/image/timing_5323394_247657934",
+				"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_5323394_247657934?x-oss-process=image/resize,m_fill,w_300,h_300"
+			}, {
+				"id": 471493930,
+				"width": 731,
+				"fileName": "timing_5323394_1246573706",
+				"height": 1632,
+				"isGif": false,
+				"url": "http://timing-imgservice.kr-cell.com/image/timing_5323394_1246573706",
+				"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_5323394_1246573706?x-oss-process=image/resize,m_fill,w_300,h_300"
+			}],
+			"topic": {
+				"id": 6052,
+				"name": "努力成为自己想成为的样子"
+			},
+			"label": {
+				"onTop": false,
+				"learnTag": "入学考试",
+				"cityTag": false,
+				"statusTag": 2
+			},
+			"album": null,
+			"payLive": null
+		},
+		"svlog": null,
+		"group": null,
+		"clockApp": null,
+		"contractApp": null,
+		"freeLive": null,
+		"personalLive": null,
+		"qaRoom": null,
+		"freeLearningRoom": null,
+		"payLearningRoom": null,
+		"topic": null,
+		"activity": null
+	},
+		{
+		"contentType": 2,
+		"feed": null,
+		"svlog": {
+			"id": 30064535,
+			"author": {
+				"id": 20937159,
+				"nickname": "xiho-治愈萌宠",
+				"gender": "female",
+				"avatar": "http://timing-imgservice.kr-cell.com/image/timing_20937159_1603877237000_aiaeosehkssvqifs2ode",
+				"department": "日更宠物up。撸猫🐱撸狗🐶超治愈。【搬运｜信息都在评论里哦～】",
+				"categoryAlias": "英语/宠物",
+				"type": "normal",
+				"isOfficial": false,
+				"accountType": 0,
+				"isFollow": false,
+				"statusInfo": {
+					"type": 1,
+					"startTime": 1603877187000,
+					"learningData": null
+				},
+				"isVerify": false,
+				"authenticationInfo": null
+			},
+			"content": "萌宠治愈｜自带妆容的狗狗🐶",
+			"type": 12,
+			"postTime": 1604995241000,
+			"likeCount": 13,
+			"replyCount": 3,
+			"isLike": false,
+			"video": {
+				"id": "7360971",
+				"url": "http://timing-video.kr-cell.com/video/timing_20937159_1604995153000_9ghij6hb9w0f0bpzyq9m",
+				"originalUrl": "http://timing-video.kr-cell.com/video/timing_20937159_1604995153000_9ghij6hb9w0f0bpzyq9m",
+				"androidUrl": "http://timing-video.kr-cell.com/video_play/timing_20937159_1604995153000_9ghij6hb9w0f0bpzyq9m",
+				"iosUrl": "http://timing-video.kr-cell.com/video_play/timing_20937159_1604995153000_9ghij6hb9w0f0bpzyq9m",
+				"gifUrl": "http://timing-imgservice.kr-cell.com/video_gif/timing_20937159_1604995153000_9ghij6hb9w0f0bpzyq9m?x-oss-process=image/resize,w_720",
+				"hasGif": true,
+				"cover": {
+					"id": 471078948,
+					"width": 1280,
+					"fileName": "timing_20937159_1604995152000_sh9gluhkm8h77d6huqgo",
+					"height": 720,
+					"isGif": false,
+					"url": "http://timing-imgservice.kr-cell.com/image/timing_20937159_1604995152000_sh9gluhkm8h77d6huqgo",
+					"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_20937159_1604995152000_sh9gluhkm8h77d6huqgo?x-oss-process=image/resize,m_fill,w_300,h_300"
+				},
+				"timeLen": 646,
+				"fileSize": 43066666,
+				"fileName": "timing_20937159_1604995153000_9ghij6hb9w0f0bpzyq9m",
+				"download": "http://timing-video.kr-cell.com/video_watermark/timing_20937159_1604995153000_9ghij6hb9w0f0bpzyq9m"
+			},
+			"imageList": [],
+			"topic": {
+				"id": 2570,
+				"name": "给你看我的笔记"
+			},
+			"label": {
+				"onTop": false,
+				"learnTag": "",
+				"cityTag": false,
+				"statusTag": 1
+			},
+			"album": null,
+			"payLive": null
+		},
+		"group": null,
+		"clockApp": null,
+		"contractApp": null,
+		"freeLive": null,
+		"personalLive": null,
+		"qaRoom": null,
+		"freeLearningRoom": null,
+		"payLearningRoom": null,
+		"topic": null,
+		"activity": null
+	},
+		{
+		"contentType": 1,
+		"feed": {
+			"id": 30064131,
+			"author": {
+				"id": 1088349,
+				"nickname": "℡浅浅要上ecnu",
+				"gender": "female",
+				"avatar": "http://timing-imgservice.kr-cell.com/image/timing_1088349_1583748951694_ochh0dhx7pqb6exbf9yt",
+				"department": "考研/软工专硕/力争成为Ecnuer/跨考不要被408所打倒",
+				"categoryAlias": "考研/408/全国计算机等级考试(NCRE)",
+				"type": "normal",
+				"isOfficial": false,
+				"accountType": 0,
+				"isFollow": false,
+				"statusInfo": {
+					"type": "1",
+					"startTime": 1605182975000,
+					"learningData": null
+				},
+				"isVerify": false,
+				"authenticationInfo": null
+			},
+			"content": "真没想到 \n好不容易 挣脱了瞌睡魔的怀抱\n又 碰上了其他事\n→_→不是与学习直接相关的\n\n但不管怎样\n我还是那句话\n凸( •̀_•́ )凸我要去上海 小花狮 希望早日见到你\n各种 妖魔鬼怪 都给我走开\n\n至少 更加坚定 ～",
+			"type": 3,
+			"postTime": 1604988171000,
+			"likeCount": 10,
+			"replyCount": 0,
+			"isLike": false,
+			"video": null,
+			"imageList": [{
+				"id": 471052564,
+				"width": 1080,
+				"fileName": "timing_1088349_1648533590",
+				"height": 1080,
+				"isGif": false,
+				"url": "http://timing-imgservice.kr-cell.com/image/timing_1088349_1648533590",
+				"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_1088349_1648533590?x-oss-process=image/resize,m_fill,w_300,h_300"
+			}],
+			"topic": null,
+			"label": {
+				"onTop": false,
+				"learnTag": "考研",
+				"cityTag": false,
+				"statusTag": 1
+			},
+			"album": null,
+			"payLive": null
+		},
+		"svlog": null,
+		"group": null,
+		"clockApp": null,
+		"contractApp": null,
+		"freeLive": null,
+		"personalLive": null,
+		"qaRoom": null,
+		"freeLearningRoom": null,
+		"payLearningRoom": null,
+		"topic": null,
+		"activity": null
+	},
+		{
+		"contentType": 13,
+		"feed": null,
+		"svlog": null,
+		"group": null,
+		"clockApp": null,
+		"contractApp": null,
+		"freeLive": null,
+		"personalLive": null,
+		"qaRoom": {
+			"id": 1685,
+			"title": "手把手教你，如何缓解考试压力",
+			"chat_room_id": 250817887,
+			"coverUrl": "http://timing-imgservice.kr-cell.com/image/light/qa/timing_58d2ksKnP06x6Lja3fa6nzvikXk5WTty-BzDuPxq-G36wGyM9g_1605182752564_quz63yid0zds1q2vucpx",
+			"qaList": [
+				{
+				"id": 6512,
+				"text": "Hi，我来了，是的，就是我想知道关于小升初的阅读理解，有什么好的办法吗？",
+				"user_id": 20594576,
+				"userInfo": {
+					"id": 20594576,
+					"nickname": "HYX",
+					"gender": "female",
+					"avatar": "http://timing-imgservice.kr-cell.com/image/timing_20594576_1601520029790_jevc0h7cno0ovkjq8r4i",
+					"department": "本人很懒，但是热爱做甜品、手账，而且最擅长的科目是英语！！！\n希望热爱做手账的小朋友和喜欢英语的小朋友点的关注吧！！！😃\n当然也热爱美食啦！！！\n我可是一个超级吃货！！！\n现在这个号完全由妹妹来掌控！！！",
+					"categoryAlias": "英语/手账/做甜品",
+					"type": "normal",
+					"isOfficial": false,
+					"accountType": 0
+				}
+			}
+			],
+			"queueUserList": [
+				{
+				"id": 19834505,
+				"nickname": "🐶陌尘",
+				"gender": "female",
+				"avatar": "http://timing-imgservice.kr-cell.com/image/timing_19834505_1601985069000_h2bqdj4v8ko3u7dmforw",
+				"department": "底线：\n❤️沙雕\n❤️❤️老林\n❤️❤️❤️心动\n❤️❤️❤️❤️小萌\n❤️❤️❤️❤️❤️欣雨\n❤️❤️❤️❤️❤️❤️一帆\n❤️❤️❤️❤️❤️❤️❤️老甘",
+				"categoryAlias": "英语/绘画/取关吃粑粑",
+				"type": "normal",
+				"isOfficial": false,
+				"accountType": 0
+			},
+				{
+				"id": 17895054,
+				"nickname": "冬蝶斗罗·唐舞桐",
+				"gender": "female",
+				"avatar": "http://timing-imgservice.kr-cell.com/image/timing_17895054_1604576632141_fp94arwhw5noz8wdf8mg",
+				"department": "宝藏女孩∶唐舞桐\n白秀秀是人间理想✨\n古月娜是人间梦想✨\n史莱克内院是人间天堂🌈\n唯有斗罗不可辜负🌈\n最爱的学博的粉丝群（绝版阿慧🎏）\n掬水樓台近烟雨",
+				"categoryAlias": "杂博/斗罗大陆/舞桐",
+				"type": "normal",
+				"isOfficial": false,
+				"accountType": 0
+			}
+			],
+			"queueCount": 5,
+			"userInfo": {
+				"id": 21041360,
+				"nickname": "虫儿飞",
+				"gender": "female",
+				"avatar": "http://timing-imgservice.kr-cell.com/image/light/editor/timing_58d2ksKnP06x6Lja3fa6nzvikXk5WTty-BzDuPxq-G36wGyM9g_1604917616333_mgw75jvqifen7amqdi0r",
+				"department": "我是一枚哲学系研究僧～爱运动爱生活爱快乐～吃得下，睡得着，动起来就很幸福辣",
+				"categoryAlias": "英语/阅读/高中政治",
+				"type": "normal",
+				"isOfficial": false,
+				"accountType": 1,
+				"isFollow": false,
+				"statusInfo": {
+					"type": 1,
+					"startTime": 1604887549000,
+					"learningData": null
+				},
+				"isVerify": true,
+				"authenticationInfo": {
+					"type": 3,
+					"certList": [{
+						"type": 0,
+						"category": "已实名",
+						"desc": "广西师范大学哲学专业研究生\n（研究方向：马克思主义哲学）\n高中政治教师资格证\n大学英语四级证书\n专业奖学金\n优秀志愿者"
+					}]
+				}
+			}
+		},
+		"freeLearningRoom": null,
+		"payLearningRoom": null,
+		"topic": null,
+		"activity": null
+	},
+		{
+		"contentType": 6,
+		"feed": null,
+		"svlog": null,
+		"group": null,
+		"clockApp": null,
+		"contractApp": null,
+		"freeLive": {
+			"id": 13245,
+			"title": "初中必读名著全解析",
+			"cover": {
+				"id": 472066218,
+				"width": 1080,
+				"fileName": "light/freeLivetiming_18329648_1584567009",
+				"height": 1885,
+				"isGif": false,
+				"url": "http://timing-imgservice.kr-cell.com/image/light/freeLivetiming_18329648_1584567009",
+				"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/light/freeLivetiming_18329648_1584567009?x-oss-process=image/resize,m_fill,w_300,h_300"
+			},
+			"spUserInfo": {
+				"id": 18329648,
+				"nickname": "油头大姐",
+				"gender": "female",
+				"avatar": "http://timing-imgservice.kr-cell.com/image/light/avatartiming_18329648_1447362928",
+				"department": "来看直播记得公屏打个招呼呀…\n【直播时间】每周二三四19：00--21：00；\n【直播主题总结】每周归纳总结主播中大家反馈的常见问题，给大家提供方法；\n【油头vlog】分享日常，不定期更新；\n【绘画教程】每周至少一个教程；",
+				"categoryAlias": "生活分享/绘画/学习分享",
+				"type": "normal",
+				"isOfficial": false,
+				"accountType": 1,
+				"isFollow": false,
+				"statusInfo": {
+					"type": 1,
+					"startTime": 1594539231000,
+					"learningData": null
+				},
+				"isVerify": true,
+				"authenticationInfo": {
+					"type": 3,
+					"certList": [{
+						"type": 0,
+						"category": "已实名",
+						"desc": "重庆大学（985）本科毕业；校级优秀毕业论文获得者；BEC中级、英语六级；2019年公务员考试上岸"
+					}]
+				}
+			}
+		},
+		"personalLive": null,
+		"qaRoom": null,
+		"freeLearningRoom": null,
+		"payLearningRoom": null,
+		"topic": null,
+		"activity": null
+	},
+		{
+		"contentType": 5,
+		"feed": null,
+		"svlog": null,
+		"group": null,
+		"clockApp": null,
+		"contractApp": {
+			"id": 36433,
+			"createTime": 1605068931000,
+			"totalAmount": 10000,
+			"status": "wait",
+			"startTime": 1605898800000,
+			"endTime": 1608750000000,
+			"surplusSeconds": 717458,
+			"groupInfo": {
+				"id": 1521312,
+				"teamID": "2888282877",
+				"builderInfo": {
+					"id": 3367145,
+					"nickname": "木心木",
+					"gender": "female",
+					"avatar": "http://timing-imgservice.kr-cell.com/image/timing_3367145_1588689791905_hm1nrwscn80jxhw8hgol",
+					"department": "河大",
+					"categoryAlias": "考研",
+					"type": "normal",
+					"isOfficial": false,
+					"accountType": 0,
+					"isFollow": false,
+					"statusInfo": {
+						"type": "1",
+						"startTime": 1605177454000,
+						"learningData": null
+					},
+					"isVerify": false,
+					"authenticationInfo": null
+				},
+				"name": "快递"
+			}
+		},
+		"freeLive": null,
+		"personalLive": null,
+		"qaRoom": null,
+		"freeLearningRoom": null,
+		"payLearningRoom": null,
+		"topic": null,
+		"activity": null
+	},
+		{
+		"contentType": 11,
+		"feed": null,
+		"svlog": null,
+		"group": null,
+		"clockApp": null,
+		"contractApp": null,
+		"freeLive": null,
+		"personalLive": null,
+		"qaRoom": null,
+		"freeLearningRoom": null,
+		"payLearningRoom": null,
+		"topic": {
+			"id": 19938,
+			"name": "厦门大学",
+			"feedList": [
+				{
+				"id": 29545942,
+				"content": "我明白我离你还很遥远\n非常遥远",
+				"imageList": [
+					{
+					"id": 459750830,
+					"width": 1680,
+					"fileName": "timing_2031078_1603016161000_e9qukh5s56dntv2onb3c",
+					"height": 1259,
+					"isGif": false,
+					"url": "http://timing-imgservice.kr-cell.com/image/timing_2031078_1603016161000_e9qukh5s56dntv2onb3c",
+					"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_2031078_1603016161000_e9qukh5s56dntv2onb3c?x-oss-process=image/resize,m_fill,w_300,h_300"
+				}]
+			},
+				{
+				"id": 29531729,
+				"content": "🙋总有一天会拿着厦门大学的录取通知书，去看王源的演唱会2⃣️0⃣️2⃣️3⃣️💪",
+				"imageList": [
+					{
+					"id": 459446108,
+					"width": 1080,
+					"fileName": "timing_7843568_1115460180",
+					"height": 720,
+					"isGif": false,
+					"url": "http://timing-imgservice.kr-cell.com/image/timing_7843568_1115460180",
+					"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_7843568_1115460180?x-oss-process=image/resize,m_fill,w_300,h_300"
+				},
+					{
+					"id": 459446124,
+					"width": 960,
+					"fileName": "timing_7843568_758061442",
+					"height": 540,
+					"isGif": false,
+					"url": "http://timing-imgservice.kr-cell.com/image/timing_7843568_758061442",
+					"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_7843568_758061442?x-oss-process=image/resize,m_fill,w_300,h_300"
+				},
+					{
+					"id": 459446164,
+					"width": 960,
+					"fileName": "timing_7843568_641546725",
+					"height": 540,
+					"isGif": false,
+					"url": "http://timing-imgservice.kr-cell.com/image/timing_7843568_641546725",
+					"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_7843568_641546725?x-oss-process=image/resize,m_fill,w_300,h_300"
+				}
+				]
+			},
+				{
+				"id": 29512273,
+				"content": "/ 为惹厦门大学 /\n冲鸭！",
+				"imageList": [
+					{
+					"id": 459153611,
+					"width": 800,
+					"fileName": "timing_15306742_1602940529000_jk3vmuged1jglp83l772",
+					"height": 1200,
+					"isGif": false,
+					"url": "http://timing-imgservice.kr-cell.com/image/timing_15306742_1602940529000_jk3vmuged1jglp83l772",
+					"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_15306742_1602940529000_jk3vmuged1jglp83l772?x-oss-process=image/resize,m_fill,w_300,h_300"
+				}, {
+					"id": 459153620,
+					"width": 828,
+					"fileName": "timing_15306742_1602940530000_9vfykmu0x1tqpd2axwy4",
+					"height": 621,
+					"isGif": false,
+					"url": "http://timing-imgservice.kr-cell.com/image/timing_15306742_1602940530000_9vfykmu0x1tqpd2axwy4",
+					"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_15306742_1602940530000_9vfykmu0x1tqpd2axwy4?x-oss-process=image/resize,m_fill,w_300,h_300"
+				}, {
+					"id": 459153629,
+					"width": 1024,
+					"fileName": "timing_15306742_1602940531000_fkmmhxoeb2r24juxxeh8",
+					"height": 680,
+					"isGif": false,
+					"url": "http://timing-imgservice.kr-cell.com/image/timing_15306742_1602940531000_fkmmhxoeb2r24juxxeh8",
+					"shareImgUrl": "http://timing-imgservice.kr-cell.com/image/timing_15306742_1602940531000_fkmmhxoeb2r24juxxeh8?x-oss-process=image/resize,m_fill,w_300,h_300"
+				}]
+			}
+			]
+		},
+		"activity": null
+	}
+
+	]
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/roundcornorhomediary">
+
+    <View
+        android:id="@+id/hometopictopblue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/hometopiccomeon"
+        android:background="@drawable/twocornorroundhometopic"
+        />
+
+    <TextView
+        android:id="@+id/hometopicht"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/hometopictopblue"
+        app:layout_constraintTop_toTopOf="@id/hometopictopblue"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="话题"
+        android:textColor="#FF0997F7"
+        android:textSize="14sp"
+        android:background="@drawable/twocornorroundhometopicwhite"
+        android:paddingHorizontal="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/hometopiccomeon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/hometopictopblue"
+        app:layout_constraintTop_toBottomOf="@id/hometopicht"
+        app:layout_constraintEnd_toEndOf="@id/hometopictopblue"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="学习群学"
+        android:gravity="start"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#FFFFFFFF"
+        />
+
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/homeitemtopiccycle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/hometopictopblue"
+    android:layout_marginTop="10dp"
+    tools:listitem="@layout/homeitemtopicitem"
+    />
+
+
+
+
+    <TextView
+        android:id="@+id/hometopicbutt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="查看更多"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeitemtopiccycle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/fourcornorroundhometopicbutt"
+        android:gravity="center"
+        android:textSize="14sp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

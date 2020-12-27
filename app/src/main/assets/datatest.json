@@ -1,0 +1,50 @@
+{
+	"contentType": 4,
+	"feed": null,
+	"svlog": null,
+	"group": null,
+	"clockApp": {
+		"id": 35393,
+		"title": "我们的目标是星辰大海",
+		"createTime": 1604289918000,
+		"groupInfo": {
+			"id": 1527196,
+			"teamID": "2894945662",
+			"builderInfo": {
+				"id": 18339916,
+				"nickname": "调了个调",
+				"gender": "female",
+				"avatar": "http://timing-imgservice.kr-cell.com/image/light/editor/timing_9e0ayx1rVD5B6fKplTQCynbCCBXMdemV0h-p4lsrtzmCFkItzQ_1604587282481_8z8ss0zurwwaysdeabp2",
+				"department": "直播时间：每周六周日上午十一点\n自习室不定时开放🌝🌝\n调调是一个偶尔讲英语，陪你聊聊天，学过文科理科医科商科的情感博主~\n本科应用心理学临床方向，在精神病专科医院做过实习医生。\n做过各种志愿者，现在在澳洲一家企业做会计相关工作，同时在国内某平台担任英语老师。\n多邻国120分，最近希望刷分到135+。\n雅思擅长阅读。\n有在澳洲会计工作经验，对留学比较了解",
+				"categoryAlias": "心理学/国际注册会计师(ACCA)/多邻国",
+				"type": "normal",
+				"isOfficial": false,
+				"accountType": 1,
+				"isFollow": false,
+				"statusInfo": {
+					"type": 1,
+					"startTime": 1594557161000,
+					"learningData": null
+				},
+				"isVerify": true,
+				"authenticationInfo": {
+					"type": 3,
+					"certList": [{
+						"type": 0,
+						"category": "已实名",
+						"desc": "皇家墨尔本理工大学商学院金牌学生大使；\n皇家墨尔本理工大学学生代表；\n皇家墨尔本理工大学学生学习导师；\nCommonpurpose国际领导力项目参与者；\n多邻国120，听说读写均120（同等雅思4个7）\n"
+					}]
+				}
+			},
+			"name": "和调调一起加油总部⑦"
+		}
+	},
+	"contractApp": null,
+	"freeLive": null,
+	"personalLive": null,
+	"qaRoom": null,
+	"freeLearningRoom": null,
+	"payLearningRoom": null,
+	"topic": null,
+	"activity": null
+}

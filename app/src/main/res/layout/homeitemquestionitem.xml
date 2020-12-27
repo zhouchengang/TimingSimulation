@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/homeitemquestionitemimg"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@mipmap/head"
+        />
+
+    <TextView
+        android:id="@+id/homeitemquestionitemtext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/homeitemquestionitemimg"
+        android:layout_marginStart="3dp"
+        android:text="该房屋染发膏语文发我预热风格与物管费任务个人为苹果"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:background="@drawable/threecornorroundhomequestion"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

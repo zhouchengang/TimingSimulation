@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/garblue">
+
+    <!--    app:elevation="0dp" 去除阴影-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/roomtopbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#00000000"
+        android:gravity="center"
+        android:padding="0dp"
+        app:elevation="0dp"
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/roomtabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#AAFFFFFF"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <ImageView
+            android:id="@+id/customIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:scaleType="center"
+            />
+
+    <androidx.viewpager.widget.ViewPager
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomtopbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/roombanner"
+        android:layout_marginTop="5dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <!-- 参考http://www.zyiz.net/tech/detail-108194.html-->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

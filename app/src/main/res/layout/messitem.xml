@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+
+        <ImageView
+            android:id="@+id/mixitemimg"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/mixitemhold"
+            app:layout_constraintStart_toEndOf="@id/mixitemimg"
+            app:layout_constraintTop_toTopOf="@id/mixitemimg"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="textingtes"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/messagepreview"
+            app:layout_constraintStart_toEndOf="@id/mixitemimg"
+            app:layout_constraintBottom_toBottomOf="@id/mixitemimg"
+            app:layout_constraintTop_toBottomOf="@id/mixitemhold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="textingtesting"
+            android:alpha="0.5"
+            android:textColor="@color/black"
+            />
+
+
+
+        <TextView
+            android:id="@+id/messagetime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/mixitemimg"
+            app:layout_constraintTop_toBottomOf="@id/mixitemhold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="textingtesting"
+            android:alpha="0.5"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            />
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/mixitemimg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/black"
+            android:alpha="0.5"
+            >
+
+        </View>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

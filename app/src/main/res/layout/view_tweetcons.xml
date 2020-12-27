@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/backpic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundcornorwhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp" />
+
+
+        <ImageView
+            android:id="@+id/customIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/TextView2"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/cover"
+            />
+
+    <View
+        android:id="@+id/devidlie"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="@id/backpic"
+        app:layout_constraintEnd_toEndOf="@id/backpic"
+        app:layout_constraintTop_toBottomOf="@id/customIcon"
+        android:layout_marginTop="10dp"
+        android:background="#CCCCCC"
+        android:layout_height="1dp" />
+
+        <ImageView
+            android:id="@+id/TextView2"
+            android:src="@mipmap/icon1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customIcon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/customText"
+            android:text="剩余教室："
+            app:layout_constraintStart_toEndOf="@id/TextView2"
+            app:layout_constraintEnd_toStartOf="@id/enterbutt"
+            app:layout_constraintTop_toTopOf="@id/TextView2"
+            app:layout_constraintBottom_toBottomOf="@id/TextView2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="20dp"
+            android:layout_width="0dp" />
+
+        <Button
+            android:id="@+id/enterbutt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/TextView2"
+            app:layout_constraintBottom_toBottomOf="@id/TextView2"
+            android:layout_marginEnd="20dp"
+            android:layout_height="30dp"
+            android:layout_width="68dp"
+            android:text="进入"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:padding="0dp"
+            android:background="@drawable/roundcornorblue"
+            >
+        </Button>
+
+
+        <ImageView
+            android:id="@+id/iconhead"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/head"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintStart_toEndOf="@id/customIcon"
+            app:layout_constraintTop_toTopOf="@id/customIcon"
+            app:layout_constraintBottom_toTopOf="@id/tweettitle"
+            />
+
+        <TextView
+            android:id="@+id/necknametext"
+            android:text="昵称"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/iconhead"
+            app:layout_constraintTop_toTopOf="@id/iconhead"
+            app:layout_constraintBottom_toBottomOf="@id/iconhead"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/iconverify"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toEndOf="@id/necknametext"
+            app:layout_constraintTop_toTopOf="@id/iconhead"
+            app:layout_constraintBottom_toBottomOf="@id/iconhead"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:src="@mipmap/iconverify" />
+
+
+        <View
+            android:id="@+id/last_price_line"
+            android:layout_width="1dp"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toEndOf="@id/iconverify"
+            app:layout_constraintTop_toTopOf="@id/iconhead"
+            app:layout_constraintBottom_toBottomOf="@id/iconhead"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="#828180"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/cunstomzanzhu"
+            android:text="赞助"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toEndOf="@id/last_price_line"
+            app:layout_constraintTop_toTopOf="@id/iconhead"
+            app:layout_constraintBottom_toBottomOf="@id/iconhead"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/tweettitle"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="TextView6"
+            app:layout_constraintStart_toStartOf="@id/iconhead"
+            app:layout_constraintTop_toBottomOf="@id/iconhead"
+            app:layout_constraintBottom_toTopOf="@id/tweetinfo"
+            android:layout_height="30dp"
+            android:layout_width="0dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/tweetinfo"
+            tools:text="文章内容"
+            app:layout_constraintStart_toStartOf="@id/iconhead"
+            app:layout_constraintTop_toBottomOf="@id/tweettitle"
+            app:layout_constraintBottom_toBottomOf="@id/customIcon"
+            android:layout_height="20dp"
+            android:layout_width="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
