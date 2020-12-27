@@ -29,8 +29,6 @@ public  class Utils {
     public static final String IMG_URL = "http://192.168.8.247:8888/";
     public static final String UP_URL = "http://192.168.8.247:1231/";
     public static final String UP_URL2 = "http://192.168.8.247:7979/";
-
-
     /**
      * 在对sd卡进行读写操作之前调用这个方法
      * Checks if the app has permission to write to device storage
